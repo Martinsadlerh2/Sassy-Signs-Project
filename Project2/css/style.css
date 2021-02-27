@@ -1,0 +1,85 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .container{
+
+
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .container{
+
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container{
+
+
+    }
+}
+/*reset stuff above*/
+h1,h2{
+  font-family: 'Lobster Two', cursive;
+  font-size:2.5em;
+}
+h1{
+  font-size:5.5em;
+}
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+ul{
+  list-style: none;
+}
+#logoImg{
+  width:50%;
+  height:50%;
+}
+.sectionBar{
+  background-color:#FAE051;
+}
+.nav{
+  background-color:#0090A3;
+  color:white;
+  text-decoration:none;
+  padding:1%;
+  margin:1%;
+
+}
+.catagoryContainer{
+  display:flex;
+  flex-flow: column;
+}
+#headerContainer{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+#aboutUsImg{
+  width:35%;
+  height:35%;
+}
