@@ -1,0 +1,213 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .container{
+
+
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .container{
+
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container{
+
+
+    }
+}
+/*reset stuff above*/
+h1,h2{
+  font-family: 'Lobster Two', cursive;
+  font-size:2.5em;
+}
+h1{
+  font-size:5.5em;
+}
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+ul{
+  list-style: none;
+}
+a{
+	text-decoration: none;
+}
+#logoImg{
+  width:55%;
+  height:55%;
+}
+#logo{
+  margin-left:16%;
+}
+.sectionBar{
+  background-color:#FAE051;
+  text-align: center;
+}
+.nav{
+  background-color:#0090A3;
+  width:6%;
+  color:white;
+  text-decoration:none;
+  padding:1%;
+  margin:6%;
+  margin-left:11%;
+  display:inline;
+
+}
+#navContainer{
+
+}
+
+#navCatalogContainer{
+	text-align: center;
+	padding:1%;
+}
+#headerContainer{
+  display: flex;
+  justify-content:center;
+  margin-left:10%;
+  padding:1.3%;
+}
+#aboutUsContainer{
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	padding:5%;
+	margin: 2%;
+}
+#aboutUsImg{
+  width:35%;
+  height:35%;
+	margin-left:32%;
+	padding:1%;
+}
+#birthdaySigns,#sportsSigns,#celebrateSigns,#holidaySigns,#babySigns,#numberSigns,#miscellaneousSigns{
+	text-align:center;
+	margin:2%;
+	padding:2%
+}
+.catalogImagesContainer{
+	width:23%;
+	height:23%;
+
+}
+.catalogImagesTD{
+	width:40%;
+	margin-left:5%;
+
+
+}
+.contactCustomContainer{
+	margin:8%;
+
+}
+#formFormat{
+	width:30%;
+	height:800%;
+
+}
+input{
+	width:150%;
+	height:900%;
+
+}
+/*.catagoryContainer{
+	font-family: 'Lobster Two', cursive;
+  display:flex;
+	align-content: space-around;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding:2%
+	margin:2%;
+	margin-left:2%;
+	margin-right:2%
+
+	}*/
+
+.textOverImage{
+ display:inline-block;
+ position: relative;
+
+}
+.textOverImage a{
+	position:absolute;
+	bottom:4em;
+	left:3em;
+	padding:1em 1.5em;
+}
+.catagoryImages{
+	width:70%;
+	padding:10%;
+	margin-left: 10%;
+	margin-right:-10%;
+}
+
+#catagorytextBirthday,#catagoryTextBaby{
+
+	margin-left:35%;
+}
+#BalloonTextOverImage{
+	width:60%;
+	font-size:2em;
+}
+
+#catagorytextSport,#catagorytextCelebrate,#catagoryTextNumber{
+
+	margin-left:40%;
+}
+
+#SportsTextOverImage,#BottletextOverImage,#HolidaytextOverImage{
+	width:93%;
+	font-size:2em;
+}
+#catagoryTextHoliday{
+	margin-left:30%;
+}
+
+#BabytextOverImage{
+	width:110%;
+	font-size:2em;
+}
+#NumbertextOverImage{
+	width:50%;
+	font-size:2em;
+	margin-left: 20%;
+}
+
+#RandomtextOverImage{
+	width:70%;
+	font-size:2em;
+	margin-left:100%;
+}
+#catagoryTextRandom{
+	margin-left:30%;
+}
+
+table{
+	font-family: 'Lobster Two', cursive;
+}
