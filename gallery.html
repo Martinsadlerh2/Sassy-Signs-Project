@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.9; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Sassy Signs Gallery</h2>
+  <p>Click on the images below to see more signs:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/imgl8Q6Zc7Uba5LRIH22WHtc_Lpw53_b3yc_6xmEqhxd50ODBBEjgezN6c7ZMEUPc53ziVN___EMdH-9aQ5HPozhMi9rDL5EXLw5aDM9VonefwZ5ghBac1ZQWK9zRZ1qB70agSHfQQ=w2400?source=screenshot.guru" alt="Beer Mug" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/E3AE13QTB6fDCvHBZLX4-Ji_UnC66XswXQ4Q3KiekCC3Hrlv08LrUb1TCPKTVTQqXwQQw392PRmmBUtZjZvFrp8HOe9jyORcPDnzjbea7bRQE-pGpYZox_DkZIdXb81roORsN8lA7A=w2400?source=screenshot.guru" alt="Golf" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/4kGILEVc3HxTqK4bZAtsS2SJP6HiV3NMUH_GJXZMTe-sMcd7ejjZ-ab0WOh-6POLNXJ8O0hNRNwyDmsgYHlTlVklK7MwGWXz1ZVP_AWVFZkd27gHpcm48jIN5J0EfPvRq6k2WDShjg=w2400?source=screenshot.guru" alt="Dinosaur" style="width:100%" onclick="myFunction(this);">
+  </div>
+ <div class="row">
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/LcHM5BUh2T_SQ76Bdn0LOyTe6ORe6BaecrpWHp3g9fjDPMGSDxgqjULgz02EmAz9OHzN2q5mQcv_fCmXcZf17SB9m9LQ1QHz4ZBgmcxCz_XBmQvlz9-w_kxSJDABl6BsW8jeX3zhnw=w2400?source=screenshot.guru" alt="White Coat" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/P8hHOHjVWAKtDr--iF0JVibC0pZTakWFeZ1o0h03zy1ex_bHouXHlW-4Hi5EIY5rCD_XZMOe5q1QjT2daqMIYLWq5OnBR_blCDn2NjRAo6_P8r5FljihWtInnOUut6SpeE9s8v2BGg=w2400?source=screenshot.guru" alt="Teacher Apple and star" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/g9rgpMvAtmaYiItGj3l0VsZVN2mpT3OdwkaoFsD67OpZl2Ie2i7NjABgusGOgUfrqbiF7uq2JKOqfhOYHG4NwTywsQT23zOf6xQmDAoMvP6uSfRDkfzFft0oJeZ91LVEQ-Ll31AmRQ=w2400?source=screenshot.guru" alt="Baby Rattle" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
